@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script>
+
+        /* function wish(name, age) {
+             document.write("Good Morning", name + age);
+         }
+         wish("Rohit", 25)
+
+        function add(a, b) {
+            let addition;
+            addition = a + b;
+            return addition;
+        }
+
+        let s = add(25, 26);
+        document.write(s); 
+
+        function add(a,b){
+            return a+b;
+        }
+        let s = add(25,30);
+        document.write(s) */
+
+        function factorial(x) {
+            if (x === 0) {
+                return 1;
+            }
+            else {
+                return x * factorial(x - 1);
+            }
+        }
+        const num = 3;
+
+        if (num > 0) {
+            let result = factorial(num);
+            document.write(`The factorial of ${num} is ${result}`);
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

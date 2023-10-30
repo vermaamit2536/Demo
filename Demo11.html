@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Scope</title>
+    <script>
+
+        /*   function greet(name, address) {
+               document.write("Riyanshi")
+           }
+           greet();
+
+        function person() {
+            this.name = "name",
+                this.age = "25"
+        }
+        let person = new person();
+
+        function person() {
+            this.name = 'Riyansh',
+                this.age = '22'
+
+            this.greet = function () {
+                document.write('Hello');
+            }
+        }
+
+        const person1 = new person();
+        const person2 = new person();
+
+        document.write(person1.name);//Riyansh
+        document.write(person2.name);//Riyansh
+
+        this.name = person_name;
+        this.age = person_age;
+        this.gender = person_gender;
+        this.greet = function () {
+            return ('Hii' + ' ' + this.name)
+        }
+        const person1 = new person('Amit', 23, 'Male');
+        const person2 = new person('Riyanshi', 7, 'Female');
+
+        document.write(person1.name);
+        document.write(person2.name);*/
+
+        /*  let person = {
+              name: 'Sam'
+          }
+          function person() {
+              this.name = "Sam"
+          }
+          let person1 = new person();
+          let person2 = new person();
+          
+
+        function Person() {
+            this.name = "Chhipkali",
+                this.age = 8;
+
+        }
+        Person.prototype.Gender = "Female"
+
+        let person1 = new Person();
+        let person2 = new Person();
+
+        document.write(person1.name);//Chhipkali
+        document.write(person2.Gender);//Female 
+
+        function Person() {
+            this.name = 'John'
+        }
+
+        Person.prototype.age = 33;
+        const person1 = new Person();
+
+        document.write(person1.age);
+
+        person.prototype = { age: 40 };
+        const person3 = new Person();
+
+        document.write(person3.age);
+        document.write(person1.age);*/
+
+//////////////////Prime Number///////////////////////////////////
+
+        let number = prompt("Enter the value")
+
+        if (number == 1) {
+            document.write(`${number} is neigther prime nor composite number`)
+        } else if (number < 1) {
+            document.write(`${number} is not a prime number`)
+        } else {
+            for (var i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    var result = `${number} is not a prime number`;
+                } else {
+                    var result = `${number} is a prime number`;
+                }
+            }
+        }
+        document.write(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
