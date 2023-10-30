@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice javascript</title>
+
+    <script>
+
+        /*const number = 100, denominator = 'a';
+         try {
+             document.write(number / denominator);
+             document.write(a);
+         }
+         catch (error) {
+             document.write('An error Caught');
+             document.write('Error Message: ' + error);
+         }*/
+
+        /*  const number = 100, denominators = 'a';
+  
+          try {
+              document.write(number / denominators);
+              document.write(a);
+          } catch (error) {
+              document.write('An error caught');
+              document.write('Error Message: ' + error);
+          } finally {
+              document.write('finally will excute every time');
+          }
+  
+        function greet() {
+            document.write("Hello World");
+        }
+        let intervalid = setTimeout(greet, 5000);
+
+        document.write('id: ' + intervalid);
+
+
+        function showtime() {
+            let dataTime = newDate();
+
+            let time = dataTime.toLocalTimestring();
+
+            document.write(time);
+
+            setTimeout(showtime, 4000);
+        }
+        showtime();
+
+
+        const number = 30;
+
+        try {
+            if (number > 40) {
+                document.write('success')
+            }
+            else {
+                throw new Error('The number is low')
+            }
+            document.write('Hello')
+        }
+        catch (error) {
+            document.write('An error Caught');
+            document.write('Error message: ' + error)
+        }
+
+
+        /////////////////Arrow Function////////////////////////
+
+
+        let age = 5;
+        let welcome = (age < 18) ?
+
+            () => document.write('Baby') :
+            () => document.write('adult');
+
+        welcome();//Baby 
+
+        let sum = (a, b) => {
+            let result = a + b;
+            return result;
+        }
+        let result = sum(10, 29); 
+
+        document.write(result);////39
+        
+
+
+
+        function Person() {
+            this.name = "Jack",
+                this.age = "34",
+                this.sayname = function () {
+                    document.write(this.age);
+
+
+                    function innerfunc() {
+                        document.write(this.age);
+                        docume
+                        innerfunc();
+                    }
+                }
+        }
+        let x = new Person();
+        x.sayname();
+
+
+
+
+        ///////////////////////////Inside Arrow function ///////////////////////////////
+
+
+        function Person() {
+            this.name = 'Jack',
+                this.age = 33,
+                this.sayname = function () {
+                    document.write(this.age);
+                    let innerfunc = () => {
+                        document.write(this.age);
+                    }
+                    innerfunc();
+                }
+        }
+        let x = new Person();
+        x.sayname();
+        
+
+        let Person = {
+            name: 'jack',
+            age: 25,
+            sayname: () => {
+                document.write(this.name);
+            }
+        }
+        Person.sayname(); 
+
+        function check() {
+            var value = document.getElementById('data').value;
+
+
+            if (value > 0) {
+                res = `${value} is positive number`
+            } else if (value < 0) {
+                res = `${value} is nagative number`
+            } else if (value == 0) {
+                res = `${value} is zero number`
+            } else {
+                res = `${value} is not a number`
+            }
+        }
+
+        document.getElementById('res').innerText = res;
+
+        var number = prompt("Enter the number")
+        var fact = 1;
+        if (number == 0) {
+            document.write(`The factorial of ${number} is 1`)
+        } else if (number < 0) {
+            document.write(`The factorial of -ive number is not possible`)
+        } else {
+            for (var i = 1; i <= number; i++) {
+                fact = fact * i;
+            }
+            document.write('The factorial of ${number} is ${fact}')
+        }
+
+        let num1 = prompt("Enter the number");
+        let num2 = prompt("Enter the number");
+        let opr = prompt("Select among +,-,/,*");
+
+        switch (opr) {
+            case "+":
+                var res = parseFloat(num1) + parseFloat(num2);
+                document.write(`${num1}+${num2} = ${res}`);
+                break;
+
+            case "-":
+                var res = parseFloat(num1) - parseFloat(num2);
+                document.write(`${num1}-${num2}= ${res}`);
+                break;
+            case "*":
+                var res = parseFloat(num1) * parseFloat(num2);
+                document.write(`${num1}*${num2} = ${res}`);
+                break;
+            case "/":
+                var res = parseFloat(num1) / parseFloat(num2);
+                document.write(`${num1}/ ${num2} = ${res}`)
+
+            default:
+                document.write('invalid operators');
+        }
+
+        /////////////////Prime Number///////////////////
+
+        let number = prompt("Enetr the numebr");
+
+        if (number == 1) {
+            document.write(`${number} is neigher prime nor composite`)
+        } else if (number < 1) {
+            document.write(`${number} is not a prime number`)
+        } else {
+            for (var i = 2; i <= number; i++) {
+                if (number % i == 0) {
+                    var res = (`${number} is not a prime number`)
+                } else {
+                    var res = (`${number} is prime numberb`)
+                }
+            }
+        }
+        document.write(res);
+
+        var num = prompt("Enter the number")
+
+        if (num == 1) {
+            var result = (`${num} is neighter prime nor composite`)
+        } else if (num < 1) {
+            var result = (`${num} is not a composite number`)
+        } else {
+            for (var i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    var result = `${num} is not a not composite number`;
+                    break;
+                } else {
+                    var result = `${num} is prime number`;
+                }
+            }
+        }
+        document.write(result);*/
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
